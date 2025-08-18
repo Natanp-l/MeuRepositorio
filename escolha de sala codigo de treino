@@ -1,0 +1,11 @@
+quantidade_pessoas = int(input("quantas pessoas irão para a reunião: "))
+tipo_reunião = str(input("escreva se a reunião sera executiva ou normal: ")).lower()
+
+if tipo_reunião == "executivo":
+    print("Será indicada a sala grande")
+elif quantidade_pessoas <= 5:
+    print("Será indicada a sala pequena")
+elif quantidade_pessoas > 5 and quantidade_pessoas <= 15:
+     print("Será indicada a sala media")
+elif quantidade_pessoas > 15:
+    print("Será indicado a sala grande ")
