@@ -1,0 +1,8 @@
+valor_pedido = float(input("coloque o alor do seu pedido: "))
+
+if valor_pedido <= 100:
+    print("A entrega será normal, com mais de 7 dias para entrega.")
+elif valor_pedido <= 500:
+     print("A entrega será prioritária, com 4 a 7 dias para entrega. ")
+elif valor_pedido > 500:
+    print("A entrega será urgente, com menos de 4 dias para entrega. ")
