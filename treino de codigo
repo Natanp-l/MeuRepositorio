@@ -1,0 +1,30 @@
+while True:
+    try:
+        N = int(input("quantos intervalos você percoreu (coloque em núnero): "))
+        if 1<= N or N <= 1000:
+            break
+        else:
+            print("entrada invalida, coloque um numero entre 1 e 1000")
+    except ValueError: 
+        print("Entrada invalida. Coloque algum numero inteiro")
+        
+        distancia_total = 0
+
+        
+for i in range(N):
+    while True:
+        try:
+            t, v = map(float, input("coloque a velocidade em km/h e e tempo horas em números (ex: 2 60, 2 é o tempo e 60 é a velocidade): ").split())
+            if t < 1 or t > 100:
+                print("Tempo inválido. O tempo deve ser entre 1 e 100 horas.")
+            elif v < 0:
+                print("Velocidade inválida. A velocidade não pode ser negativa.")
+            elif v > 120:
+                print("Excesso de velocidade detectado. A velocidade máxima permitida é 120 km/h.")
+            else:
+                distancia_total += t * v
+                print(distancia_total)
+                break
+        except (ValueError, IndexError):
+            print("Entrada inválida. Certifique-se de inserir dois números válidos separados por espaço.")
+            
