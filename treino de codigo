@@ -1,15 +1,14 @@
+distancia_total = 0
 while True:
     try:
         N = int(input("quantos intervalos você percoreu (coloque em núnero): "))
-        if 1<= N or N <= 1000:
+        if 1<= N and N <= 1000:
             break
         else:
             print("entrada invalida, coloque um numero entre 1 e 1000")
     except ValueError: 
         print("Entrada invalida. Coloque algum numero inteiro")
         
-        distancia_total = 0
-
         
 for i in range(N):
     while True:
@@ -27,4 +26,5 @@ for i in range(N):
                 break
         except (ValueError, IndexError):
             print("Entrada inválida. Certifique-se de inserir dois números válidos separados por espaço.")
+            
             
