@@ -1,0 +1,11 @@
+while True:
+    C, N = map(int(input("coloque a distancia da pista  e quantos metros você correrá em algarismos: ")).split())
+    if 1<= C and C <= 100000000:
+        break
+    elif N >=1 and N<=100:
+        break
+    else:
+        print("coloque uma entrada valida")
+
+y = N%C
+print (y)
